@@ -30,6 +30,8 @@ Tel: \smcp{(+91) 9600062523}}
   \item 2 years of experience in QA/Testing (black box) of products on Virtualization and Cloud Computing platform.
   \item Currently working as a Project Manager, Managing a 4 member Development team and a 3 member tesing team.
   \item My assignment here is to oversee the development, testing, deployment, and support of the products based on CLOUD COMPUTING (PaaS/IaaS). 
+  \item As an additional responsibility, Helped in Design and Implemantation of AWS Infrastructure Architecture for two of our clients. I work with them to 
+help them adopt the right services and help them scale on the platform. This was largely a customer facing role with a strong technical angle, including both hands-on and higher-level architecture. This role required deep knowledge of all aspects of Amazon Web Services and the ability to relay this to the customer.
 \newline
 \end{itemize}
 \end{resumesummary}
@@ -52,20 +54,19 @@ Tel: \smcp{(+91) 9600062523}}
   \item Proficient in all cycles of test life cycle from test planning to defect tracking and managing defect lifecycle.
 %  \item Developing and Maintaining Test Scripts, analyzing bugs and interacting with development team members in fixing the defects.
   \item Good communication and interpersonal skills with strong knowledge of Web and Product Application testing on cloud platform.
+  \item knowledge of Amazon EC2, Amazon S3, Amazon SimpleDB, Amazon RDS, Amazon Elastic Load Balancing, Amazon SQS, and other services of the AWS family.
   \item Linux, Mac OSX, MySQL, Python.
   \item SVN, Redmine, Bugzilla.
 \newline
 \end{itemize}
 \end{resumesummary}
 
-\newpage
+%\newpage
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \vspace*{3\baselineskip}
-
-
 
 \begin{resumeblock}{Formation}
 \newline
@@ -127,15 +128,85 @@ Tel: \smcp{(+91) 9600062523}}
 \end{resumeblock}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{resumeblock}{Projects}
+\resumeitem{E-Billing Solutions,\\ EBS, www.ebs.in}
+\newline
+\largeskip
+\resumeitem{Company Profile}{E-Billing Solutions or EBS (www.ebs.in) is India’s second largest payment gateway. EBS is the first Indian merchant account provider to achieve the PCI DSS Level 1 Standards of Compliance.E-Billing Solutions part of Ingenico was incorporated in 2005 by young entrepreneurs who came together to offer a comprehensive and easy solution for the e-commerce industry. EBS has pioneered as an associate with multiple acquiring Banks and other entitiesto provide payment services via credit/debit cards, net-banking e-wallets, cash cards on a single platform.}
+\largeskip
+\resumeitem{Project Goals}{It is very important that the web service be available at all times and also able to scale to thousands of concurrent users. Thus, High Availability and Scalability are of paramount importance to EBS. Apart from the goals of High Availability(HA) and Scalability, Disaster Recovery (DR) was also of paramount importance. So, the service had to be available even if the primary data centre went offline for any reason. Another important goal was that of security.
+i
+It was also important that the project be designed with the budgets that the client had in mind. A solution had to be designed to satisfy the requirements of the client while staying within budget.}
+\largeskip
+\resumeitem{Project Solution}{Given that the main goals of the project are High Availability, Scalability, Disaster Recovery and PCI-CSS grade security, we 
+arrived at the right solution. Amazon Web Services (AWS) was chosen as the solution of choice of the project. Since AWS Elastic Compute Cloud (EC2) service does not have a point of presence (POP) in India, the Singapore location was chosen as the EC2 region of choice. 
 
+\textbf{High Availability (HA) :} 
+
+EBS’s HA goals were realised by reducing the number of single points of failures by adding sufficient redundancy in all 
+places where possible.
+ 
+\textbf{Scalability :}
+
+EBS is a fast browning company that adds additional merchants everyday. This grown needs to be sustained by both vertical and horizontalscaling.
+
+\textbf{Disaster Recovery :} 
+
+Since thousands of merchants depend on EBS for their online transactions to take place, it is very important that EBS 
+continue to operate even if they are down from their primary data centre in India. We went with creating a near replica of the existing setup of the primary 
+DC in India. It is a standard 3-tier architecture based web service. At any point offailure, service can switch from India to Singapore just by switching the DNS records.
+
+\textbf{Security :} 
+
+Since EBS’s has to be compliant with the PCI-DSS standards, security is of paramount importance, so, Amazon’s VPC was used to implement a 
+near private cloud setup and Critical services were running in a private subnet.}
+\largeskip
+\resumeitem{Cloud Technologies used}{EC2, VPC, Security Groups, Elastic Block Storage, S3, Elastic IPs, Cloud Front, Route 53, Cloud Watch, SES}
+\newline
+\newline
+\largeskip
+
+\resumeitem{MerchantRMS, Inc,\\ MerchantRMS www.merchantrms.com}
+\newline
+\newline
+\newline
+\largeskip
+\resumeitem{Company Profile}{MerchantRMS (www.merchantrms.com) is a Risk Management System (RMS) for merchants who are involved in e-commerce. MerchantRMS is one of the leading companies in the world to provide Risk Management for credit card and debit card transactions in Card Not Present (CNP) transactions. With clients all over the world. MerchantRMS is a Software-as-a-Service (SaaS) model based company headquartered in Canada.}
+\largeskip
+
+\resumeitem{Project Goals}{High Availability and Scalability were one of the main goals we were trying to achieve for this project. Reason being that MerchantRMS is a SaaS model provider and thousands of merchants depend on MerchantRMS to fight credit fraud, which is a constant threat. Disaster Recovery is also an important goal of this project, apart from the goals of High Availability(HA) and Scalability. The goal was that the service had to be running at all times nomatter from which Availability Zone it was working from. It was very important for MerchantRMS to start small, budget-wise.}
+\largeskip
+
+\resumeitem{Project Solutions}{Given that the main goals of the project are High Availability, Scalability, Disaster Recovery and PCI-CSS grade security, we arrived at the right solution. Amazon Web Services (AWS) was chosen as the solution of choice of the project. Since AWS Elastic Compute Cloud (EC2) service does not have a point of presence (POP) in India, the Singapore location was chosen as the EC2 region of choice. 
+
+\textbf{High Availability (HA) :}
+
+Redundancies were introduced wherever possible, while single points of failure were reduced.
+
+\textbf{Scalability :}
+
+Their infrastructure had to be architected in such a way that it scales vertically and horizontally very easy with minimal downtime. We used multiple MySQL slaves for generating reports from, used multiple load balancers with round robin DNS and all static contents were moved to Amazon S3, front-ended by Amazon’s CDN Cloud Front. 
+
+\textbf{Disaster Recovery :}
+
+We took full advantage of AWS’s Availability zones within the same region. Amazon’s RDS database as a service was utilised with its multi Availability Zone capability. Replicas of the 3-tier design infrastructure were setup at each Availability Zone. At any point in time, MerchantRMS's service can switch from one Availability Zone to the other just by switching the DNS records. 
+
+\textbf{Security :} 
+
+Since EBS’s has to be compliant with the PCI-DSS standards, security is of paramount importance. Amazon’s VPC was used to implement a near private cloud setupand all servers had just one, well defined function and Strict policy on the services that each server is running.}
+\largeskip
+
+\resumeitem{Cloud Technologies used}{EC2, VPC, Security Groups, Elastic Block Storage, S3, Elastic IPs, Cloud Front, Route 53, Cloud Watch, SES, RDS, 
+Availability Zones.}
+\largeskip
+\end{resumeblock}
+
+
+\begin{resumeblock}{Products}
 \resumeitem{StackIron,\\ IaaS, Hypervisor Manager}{StackIron is a virtualization platform. StackIron provides a unified interface to manage all opensource hypervisors. A pure python implementation for which we developed our own development framework and billing solution. It comes integrated with third party billing solutions like WHMCS as well. All basic functionalities like backup, templatization, migration, SAN and local storage management work seamlessly across all hypervisors. StackIron provides fine grained user control and allows various levels of user configurations at runtime. StackIron has an optional VLAN and bonding functionality along with Basic Firewall and traffic controlling.}
 \largeskip
 
-\resumeitem{K7 Tracker,\\ Laptop Recovery Software}{K7 Tracker is an invisible software security application that traces the location of missing laptops for recovery. K7 Tracker is a light weight application that will help you track and 
-ﬁnd your device if it ever gets stolen. It works on MAC and Linux machines. This tracking system send, over the Internet, updates regarding the current location of the device to a remotely administered repository. If the device is lost or stolen, but maintains Internet connectivity and unmodified software, the tracking system can keep tabs on the current whereabouts of the device. k7tracker.com is the device management portal, From where you can manage all your devices, 
-configure and track them all from a single place.}
+%\resumeitem{K7 Tracker,\\ Laptop Recovery Software}{K7 Tracker is an invisible software security application that traces the location of missing laptops for recovery. K7 Tracker is a light weight application that will help you track and ﬁnd your device if it ever gets stolen. It works on MAC and Linux machines. This tracking system send, over the Internet, updates regarding the current location of the device to a remotely administered repository. If the device is lost or stolen, but maintains Internet connectivity and unmodified software, the tracking system can keep tabs on the current whereabouts of the device. k7tracker.com is the device management portal, From where you can manage all your devices, configure and track them all from a single place.}
 \largeskip
 
 \resumeitem{EggPlug,\\ NAS and Cloud Storage}{EggPlug (www.eggplug.com) is a physical device which lets you access your digital media across the Internet. Contents across various other Physical plugs and desktop installations are kept in sync. User selected files/folders are backed incrementally onto Amazon S3. Devices are authenticated using OAuth protocol. One could simply consider this product as a NAS and Dropbox solutions combined. EggPlug can automatically backup your most important folders to EggRack,the Cloud based, versioned backup service.}
@@ -151,17 +222,17 @@ configure and track them all from a single place.}
 on pre-build values/range dictionary, task queue, simple calls for save, update and delete functionalities,Multiple dynamic user roles, cookie based authentication, pre and post start procedures etc.}
 \largeskip
 
-\resumeitem{MCNHRMS,\\ Human Resource Management Portal}{MCN is an HR services and placement providing organization aligned to address the objective to obtainthe efficiencies and effectiveness of IT power processes. MCNHRMS is an Intranet Workflow Management portal. This Portal usage is for authorized MCN employeesonly. This Portal enables the authorized users to capture the market details, specific client requirements, allocate the requirements to the consultants, fulfil the requirements and complete the formalities of the closure of the requirement. The individual credits and performance monitoring and their Key Result Areas tracking will be done only through this portal. Delivery Lead allocates client's requirements to consultant. Consultant sends all clients requirement to QCperson and also manages the candidate recruitment process. Associate consultant updates the candidate feedback status sent by the client. Quality Checker (QC)Understands client requirements and performs QC.}
-\largeskip
+%\resumeitem{MCNHRMS,\\ Human Resource Management Portal}{MCN is an HR services and placement providing organization aligned to address the objective to obtainthe efficiencies and effectiveness of IT power processes. MCNHRMS is an Intranet Workflow Management portal. This Portal usage is for authorized MCN employeesonly. This Portal enables the authorized users to capture the market details, specific client requirements, allocate the requirements to the consultants, fulfil the requirements and complete the formalities of the closure of the requirement. The individual credits and performance monitoring and their Key Result Areas tracking will be done only through this portal. Delivery Lead allocates client's requirements to consultant. Consultant sends all clients requirement to QCperson and also manages the candidate recruitment process. Associate consultant updates the candidate feedback status sent by the client. Quality Checker (QC)Understands client requirements and performs QC.}
+%\largeskip
 
-\resumeitem{Island-worldwide,\\ Online Travel agency}{I-W provides leisure and business travellers a wide selection of low airfares, as well as deals on lodging, car rentals, cruises, vacation packages and other travel. It is to address consumer's need for an unbiased, comprehensive display of fares and rates in a single location. Its inventory includes hundreds of airlines, more than 80,000 hotels worldwide and 13 rental car brands. Search results are presented in an easy-to-use matrix that displays a vast array of travel options.}
-\largeskip
+%\resumeitem{Island-worldwide,\\ Online Travel agency}{I-W provides leisure and business travellers a wide selection of low airfares, as well as deals on lodging, car rentals, cruises, vacation packages and other travel. It is to address consumer's need for an unbiased, comprehensive display of fares and rates in a single location. Its inventory includes hundreds of airlines, more than 80,000 hotels worldwide and 13 rental car brands. Search results are presented in an easy-to-use matrix that displays a vast array of travel options.}
+%\largeskip
 
-\resumeitem{ACAPS,\\ Online financing solution product}{Automatic Credit Application Processing System is an online financing solution product. ACAPS can helpa customer, who finds paying off debts, difficult. The product also gives homeowners an option to borrow against their equity to pay off their debts in full. This could be accomplished, even if they have been denied a loan by other lenders. Once the customers consolidate all their monthly debt into one lower payment, they can breathe easier. Interest on their new monthly payment may even be tax-deductible. Plus, they can arrange to have cash left over to spend as they wish. And unlike other lenders, the customer can prequalify in as little as 24 hours and deliver their funds in days, not months.}
+%\resumeitem{ACAPS,\\ Online financing solution product}{Automatic Credit Application Processing System is an online financing solution product. ACAPS can helpa customer, who finds paying off debts, difficult. The product also gives homeowners an option to borrow against their equity to pay off their debts in full. This could be accomplished, even if they have been denied a loan by other lenders. Once the customers consolidate all their monthly debt into one lower payment, they can breathe easier. Interest on their new monthly payment may even be tax-deductible. Plus, they can arrange to have cash left over to spend as they wish. And unlike other lenders, the customer can prequalify in as little as 24 hours and deliver their funds in days, not months.}
 \newline
 \largeskip
 \end{resumeblock}
-\newpage
+%\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{resumeblock}{Online Profile}

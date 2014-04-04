@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.2-0.9995.2 (TeX Live 2009/Debian) (format=xelatex 2012.8.5)  2 APR 2014 13:06
+This is XeTeX, Version 3.1415926-2.2-0.9995.2 (TeX Live 2009/Debian) (format=xelatex 2012.8.5)  4 APR 2014 19:00
 entering extended mode
  %&-line parsing enabled.
 **Karthick.tex
@@ -125,28 +125,43 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 
 
 
-] [2] [3] [4]
-File: idea.jpg Graphic file (type QTm)
+] [2]
+Underfull \hbox (badness 10000) in paragraph at lines 164--168
 
-<use  "idea.jpg" >
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--174
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--174
+
+ []
+
+[3] [4] [5]
+File: idea.jpg Graphic file (type QTm)
+ <use  "idea.jpg" >
 File: Cam.jpg Graphic file (type QTm)
  <use  "Cam.jpg" >
 File: Travel.jpg Graphic file (type QTm)
  <use  "Travel.jpg" >
 File: Music.jpg Graphic file (type QTm)
- <use  "Music.jpg" >
-Overfull \hbox (78.34474pt too wide) in paragraph at lines 177--185
+
+<use  "Music.jpg" >
+Overfull \hbox (78.34474pt too wide) in paragraph at lines 248--256
 [] 
  []
 
-[5] (./Karthick.aux) ) 
+[6] (./Karthick.aux) ) 
 Here is how much of TeX's memory you used:
- 971 strings out of 495724
- 12508 string characters out of 1189347
- 85329 words of memory out of 3000000
- 4128 multiletter control sequences out of 15000+50000
- 6408 words of font info for 27 fonts, out of 3000000 for 9000
+ 974 strings out of 495724
+ 12533 string characters out of 1189347
+ 86329 words of memory out of 3000000
+ 4130 multiletter control sequences out of 15000+50000
+ 6715 words of font info for 28 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 29i,12n,21p,1012b,242s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,12n,21p,1013b,244s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Karthick.pdf (5 pages).
+Output written on Karthick.pdf (6 pages).
